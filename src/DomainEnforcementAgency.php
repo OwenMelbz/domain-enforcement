@@ -31,7 +31,7 @@ class DomainEnforcementAgency {
     }
 
     /**
-     * Determine if the request has a URI that should pass through CSRF verification.
+     * Determine if the request URI that matches one of the configured exceptions.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return bool
