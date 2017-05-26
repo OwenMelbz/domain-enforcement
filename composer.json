@@ -1,0 +1,23 @@
+{
+    "name": "owenmelbz/https-enforcement",
+    "description": "Laravel 5.x middleware to enforce https redirection for your app.",
+    "keywords": ["laravel", "https", "redirect", "force", "enforce"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Owen Melbourne",
+            "email": "owenmelbz@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OwenMelbz\\HttpsEnforcement\\": "src/"
+        }
+    }
+}
