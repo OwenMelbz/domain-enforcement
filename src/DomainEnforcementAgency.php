@@ -1,10 +1,10 @@
 <?php
 
-namespace OwenMelbz\HttpsEnforcement;
+namespace OwenMelbz\DomainEnforcement;
 
 use Closure;
 
-class HttpsEnforcementAgency {
+class DomainEnforcementAgency {
 
     private static $except = [];
 
@@ -17,7 +17,7 @@ class HttpsEnforcementAgency {
      */
     public function handle($request, Closure $next)
     {
-        if (config('https_enforcement.enforce_https') === true) {
+        if (config('domain_enforcement.enforce_domain') === true) {
             if (!$request->secure() && !$this->inExceptArray($request)) {
                 return redirect()->secure($request->getRequestUri());
             }

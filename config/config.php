@@ -2,11 +2,11 @@
 
     /*
     |--------------------------------------------------------------------------
-    | Whether or not to force requests to the https version of your app.
+    | Whether or not to enforce your APP_URL
     |--------------------------------------------------------------------------
     */
 
-    'enforce_https' => env('ENFORCE_HTTPS', false),
+    'enforce_domain' => env('ENFORCE_DOMAIN', false),
 
     /*
     |--------------------------------------------------------------------------
