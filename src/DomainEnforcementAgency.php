@@ -18,8 +18,12 @@ class DomainEnforcementAgency {
     public function handle($request, Closure $next)
     {
         if (config('domain_enforcement.enforce_domain') === true) {
-            if (!$request->secure() && !$this->inExceptArray($request)) {
-                return redirect()->secure($request->getRequestUri());
+
+            $accessedUrl = $request->root();
+            $definedUrl = config('app.url');
+
+            if ($accessedUrl !== $definedUrl && !$this->inExceptArray($request)) {
+                return redirect($definedUrl . $request->getRequestUri());
             }
         }
 

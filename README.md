@@ -5,13 +5,17 @@ An automatic piece of middleware for Laravel 5.x, which will force users to acce
 
 ## Usage
 
-1- Install via composer `composer require owenmelbz/domain-enforcement`
+1. Install via composer `composer require owenmelbz/domain-enforcement`
 
-2- Register the service provider - typically done inside the `app.php` providers array e.g `OwenMelbz\DomainEnforcement\DomainEnforcementServiceProvider::class`
+2. Register the service provider - typically done inside the `app.php` providers array e.g `OwenMelbz\DomainEnforcement\DomainEnforcementServiceProvider::class`
 
-3- Add `ENFORCE_DOMAIN=true` to your application environment config e.g `.env`
+3. Add `ENFORCE_DOMAIN=true` to your application environment config e.g `.env`
 
-4- Enjoy your stress free architecture agnostic redirects
+4. Enjoy your stress free architecture agnostic redirects
+
+## Configuration
+
+If you publish the config via `php artisan vendor:publish --provider="OwenMelbz\DomainEnforcement\DomainEnforcementServiceProvider"` you can exclude urls from getting enforced.
 
 
 ## Why?
