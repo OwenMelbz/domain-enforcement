@@ -22,6 +22,10 @@ class DomainEnforcementAgency {
             $accessedUrl = $request->root();
             $definedUrl = config('app.url');
 
+            if (empty($definedUrl) || $definedUrl === '/') {
+                $definedUrl = config('domain_enforcement.url');
+            }
+
             if ($accessedUrl !== $definedUrl && !$this->inExceptArray($request)) {
                 return redirect($definedUrl . $request->getRequestUri());
             }
