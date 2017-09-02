@@ -16,5 +16,12 @@
         "psr-4": {
             "OwenMelbz\\DomainEnforcement\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OwenMelbz\\DomainEnforcement\\DomainEnforcementServiceProvider"
+            ]
+        }
     }
 }
