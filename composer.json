@@ -9,9 +9,7 @@
             "email": "owenmelbz@gmail.com"
         }
     ],
-    "require": {
-        "illuminate/support": "5.*"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "OwenMelbz\\DomainEnforcement\\": "src/"
