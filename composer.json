@@ -1,6 +1,6 @@
 {
     "name": "owenmelbz/domain-enforcement",
-    "description": "Laravel 5 middleware to enforce a single domain on your application. e.g non-www. to www.",
+    "description": "Laravel 5+ middleware to enforce a single domain on your application. e.g non-www. to www.",
     "keywords": ["laravel", "www", "redirect", "non-www", "enforce"],
     "license": "MIT",
     "authors": [
