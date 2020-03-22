@@ -1,6 +1,6 @@
-# Laravel 5 and 6 Domain / APP_URL Enforcement
+# Laravel 5+ Domain / APP_URL Enforcement
 
-An automatic piece of middleware for Laravel 5.x, which will force users to access your application via what is defined in the APP_URL - especially useful for SEO forcing non-www users to www etc, unless specified in the ignore list
+An automatic piece of middleware for Laravel 5+, which will force users to access your application via what is defined in the APP_URL - especially useful for SEO forcing non-www users to www etc, unless specified in the ignore list
 
 
 ## Usage
